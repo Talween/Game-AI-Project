@@ -11,7 +11,7 @@ Welcome to the Game AI Project! This is a school project that includes implement
 - a2partb.py: Implements a game tree with minimax algorithm for decision-making in the board game.
 - player1.py: Contains the AI for Player One, using the game tree to determine the best move.
 - player2.py: Contains the AI for Player Two, similar to Player One but for the opposing side.
-- 
+
 **Features**
   
 - Data Structures: Custom implementations of stack, queue, and deque, and a hash table.
