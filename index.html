@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Play My Python Game</title>
+</head>
+<body>
+  <h1>Play My Python Game</h1>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.22.1/full/pyodide.js"></script>
+  <script type="text/javascript">
+    async function main() {
+      let pyodide = await loadPyodide();
+      await pyodide.loadPackage(["numpy"]);  // Load any needed tools
+      let pythonCode = await (await fetch('game/main.py')).text();  // Get your game code
+      await pyodide.runPythonAsync(pythonCode);  // Run your game code
+    }
+    main();
+  </script>
+</body>
+</html>
